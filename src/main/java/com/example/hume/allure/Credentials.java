@@ -1,3 +1,5 @@
+package com.example.hume.allure;
+
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
@@ -9,7 +11,7 @@ public class Credentials {
     private final String userName;
     private final String password;
 
-    Credentials() throws IOException {
+    public Credentials() throws IOException {
         Properties prop = new Properties();
         InputStream inputStream = getClass().getClassLoader().getResourceAsStream(fileName);
         if (inputStream != null) {
@@ -46,7 +48,7 @@ public class Credentials {
 
     @Override
     public String toString() {
-        return "Credentials{" +
+        return "com.example.hume.allure.Credentials{" +
                 "userName='" + userName + '\'' +
                 ", password='" + password + '\'' +
                 '}';
