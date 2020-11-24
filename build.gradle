@@ -1,0 +1,26 @@
+plugins {
+    id 'java'
+}
+
+repositories {
+    mavenCentral()
+}
+
+group
+version '1.0.0-SNAPSHOT'
+
+dependencies {
+    compile 'com.codeborne:selenide:5.11.1'
+
+    compile("org.junit.jupiter:junit-jupiter-api:5.7.0")
+    compile("org.junit.jupiter:junit-jupiter-engine:5.7.0")
+    compile("org.junit.jupiter:junit-jupiter-params:5.7.0")
+}
+
+tasks.withType(JavaCompile) {
+    options.encoding = 'UTF-8'
+}
+
+test {
+    useJUnitPlatform()
+}
