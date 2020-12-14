@@ -7,3 +7,9 @@
 /gradlew
 /gradlew.bat
 /settings.gradle
+.settings/org.eclipse.buildship.core.prefs
+.vscode/
+allure-results/
+bin/
+.classpath
+.project

@@ -7,9 +7,6 @@ repositories {
     mavenCentral()
 }
 
-group 'com.example.hume'
-version '1.0.0-SNAPSHOT'
-
 allure {
     autoconfigure = true
     version = '2.13.6'
